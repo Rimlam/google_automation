@@ -1,0 +1,12 @@
+def nadji_najmanji(niz):
+    if len(niz) == 0:
+        return None  # Prazan niz, nema najmanjeg broja
+    najmanji = niz[0]
+    for broj in niz:
+        if broj < najmanji:
+            najmanji = broj
+    return najmanji
+
+niz = [3, 5, 7, 1, 9, 4]
+najmanji = nadji_najmanji(niz)
+print("Najmanji broj u nizu je:", najmanji)
